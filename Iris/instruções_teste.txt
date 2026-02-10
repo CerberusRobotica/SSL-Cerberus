@@ -1,11 +1,15 @@
+Instalar dependencias:
+cd backend/scripts
+./install.sh
+
 Terminal 1 → Backend
 cd backend
-source venv/bin/activate
+source scripts/activate.sh
 ./scripts/run_api.sh
 
 Terminal 2 → Publisher LCM (opcional)
 cd backend
-source venv/bin/activate
+source scripts/activate.sh
 python3 lcm_test/publisher.py
 
 Terminal 3 → Frontend
