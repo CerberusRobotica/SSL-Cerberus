@@ -1,0 +1,14 @@
+Terminal 1 → Backend
+cd backend
+source venv/bin/activate
+./scripts/run_api.sh
+
+Terminal 2 → Publisher LCM (opcional)
+cd backend
+source venv/bin/activate
+python3 lcm_test/publisher.py
+
+Terminal 3 → Frontend
+cd frontend
+npm install
+npm run dev

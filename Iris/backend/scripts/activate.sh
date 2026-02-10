@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ ! -d "venv" ]; then
-  echo "❌ venv não encontrado. Crie com: python3 -m venv venv"
+  echo "❌ venv não encontrado. Rode: ./scripts/install_deps.sh"
   return 1
 fi
 
